@@ -128,9 +128,9 @@
         [self.viewResultColor setBackgroundColor:[UIColor grayColor]];
     }
 
-    self.textFieldRed.text = @"";
-    self.textFieldGreen.text = @"";
-    self.textFieldBlue.text = @"";
+    [self.textFieldRed setText:@""];
+    [self.textFieldGreen setText:@""];
+    [self.textFieldBlue setText:@""];
 }
 
 - (BOOL)checkInputValues {
@@ -148,8 +148,8 @@
 
 - (void)tapField {
     if (![self.labelResultColor.text isEqualToString:@"Color"]) {
-        self.labelResultColor.text = @"Color";
-        self.viewResultColor.backgroundColor = [UIColor grayColor];
+        [self.labelResultColor setText:@"Color"];
+        [self.viewResultColor setBackgroundColor:[UIColor grayColor]];
    }
 }
 
